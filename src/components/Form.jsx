@@ -17,7 +17,7 @@ export function convertToEmoji(countryCode) {
 function Form() {
   const navigate = useNavigate();
   const [cityName, setCityName] = useState("");
-  const [country, setCountry] = useState("");
+  // const [country, setCountry] = useState("");
   const [date, setDate] = useState(new Date());
   const [notes, setNotes] = useState("");
 

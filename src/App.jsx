@@ -21,8 +21,8 @@ function App() {
           <Route path="pricing" element={<Pricing />} />
           <Route path="app" element={<AppLayout />}>
             <Route index path="cities" element={<CityList />} />
-            <Route path="cities/:id" element={<City />} />
             <Route path="countries" element={<CountriesList />} />
+            <Route path="cities/:id" element={<City />} />
             <Route path="form" element={<Form />} />
           </Route>
           <Route path="login" element={<Login />} />
