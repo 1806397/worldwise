@@ -32,7 +32,7 @@ function AuthProvider({ children }) {
       dispatch({ type: "login", payload: FAKE_USER });
   }
   function logout() {
-    dispatch({ tpye: "logout" });
+    dispatch({ type: "logout" });
   }
   return (
     <AuthContext.Provider value={{ user, isAuthenticated, login, logout }}>
@@ -44,6 +44,7 @@ function useAuth() {
   const context = useContext(AuthContext);
   if (context === undefined)
     throw new Error("Context was used outside the provider");
+  return context;
 }
 
 export { AuthProvider, useAuth };
