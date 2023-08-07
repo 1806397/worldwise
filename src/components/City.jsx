@@ -19,7 +19,7 @@ function City() {
     function () {
       getCity(id);
     },
-    [id]
+    [id, getCity]
   );
   // TEMP DATA
   // const currentCity = {
